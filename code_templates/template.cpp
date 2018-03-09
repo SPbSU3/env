@@ -8,6 +8,8 @@ using namespace std;
 #define sz(c) int((c).size())
 #define pb push_back
 #define mp make_pair
+#define fst first
+#define snd second
 
 #define FILE "a"
 

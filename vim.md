@@ -1,4 +1,4 @@
-# Configurate vim from scratch:
+# Configure vim from scratch:
 
 * ```vim ~/.vimrc```:
 ```bash
@@ -27,7 +27,7 @@ inoremap {<cr> {<cr>}<esc>O
       
 * ```mkdir ~/bin/ && vim ~/bin/g```:
 ```bash
-g++ -Wall -Wextra -std=c++11 -O2 -DLOCAL $1 -o exec || exit 1
+g++ -Wall -Wextra -std=c++14 -O2 -DLOCAL $1 -o exec || exit 1
 echo Run
 ./exec || exit 1
 echo Out

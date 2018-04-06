@@ -2,7 +2,7 @@
 
 * ```vim ~/.vimrc```:
 ```bash
-filetype plugin indent on
+filetype indent on
 syntax on
  
 set nocp hls is et sw=4 sts=4 ts=4 nu rnu mouse=a ru so=4 sc

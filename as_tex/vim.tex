@@ -1,0 +1,46 @@
+\textbf{vimrc}
+\begin{lstlisting}[language=bash]
+filetype indent on
+syntax on
+
+set nu
+set cin
+set sw=4
+set sts=4
+set ts=4
+set so=99
+set bs=2
+set et
+set hls
+
+nn <c-j> :w <bar> :!g % <cr>
+
+:au BufNewFile *.cpp r ~/.vim/main.cpp | 0d
+
+inoremap {<cr> {<cr>}<esc>O
+
+nn <silent> <space> :nohls <bar> :echo <cr>
+\end{lstlisting} 
+    
+\textbf{template}    
+\begin{lstlisting}[language=bash]
+mkdir ~/.vim && vim ~/.vim/main.cpp  
+\end{lstlisting} 
+
+\textbf{bash} 
+\begin{lstlisting}[language=bash]
+export PATH=~/bin:$PATH
+mkdir ~/bin/ && vim ~/bin/g
+\end{lstlisting} 
+
+\begin{lstlisting}[language=bash]
+g++ -Wall -Wextra -std=c++14 -O2 -DLOCAL $1 -o exec || exit 1
+echo Run
+./exec || exit 1
+echo Out
+tail -20 *.out
+\end{lstlisting} 
+
+\begin{lstlisting}[language=bash]
+chmod +x ~/bin/g
+\end{lstlisting} 
